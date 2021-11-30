@@ -37,6 +37,10 @@
    a:hover{
        background-color: blue;
    }
+
+   a:active{
+       color: blue;
+   }
    
 
 
@@ -55,7 +59,7 @@
     text-align: center;
     text-decoration: none;
     outline: none;
-    border: none;
+    border: 2px solid white;
     border-radius: 15px;
     box-shadow: 0 9px white;
     font-size: 25px;
@@ -63,3 +67,42 @@
     background-color: red;
     color: white;
    }
+
+   .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color:blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 20px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -70px;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent transparent black transparent;
+  }
+  
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
