@@ -560,13 +560,13 @@ min-height: 50px;
     height: 1px;
 }
 .cart-buttom .total button{
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     background-color:#fd8c66;
     margin: 110px 12px 10px 0;
     display: flex;
     font-weight: 600;
-    padding: 10px 25px 25px 25px;
+    padding: 10px 40px 25px 25px;
     justify-content: flex-end;
     text-align: center;
     width: 50%;
