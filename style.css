@@ -1,16 +1,19 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px ;
-    
     color:white;
 }
+
    nav{
        flex: 1;
        text-align: right;
@@ -35,7 +38,7 @@
        color: white;
    }
    a:hover{
-       background-color: blue;
+       text-decoration: underline;
    }
 
    a:active{
@@ -67,6 +70,11 @@
     background-color: red;
     color: white;
    }
+   
+   nav ul li button:hover{
+       color: blue;
+   }
+   
 
    .tooltip {
     position: relative;
@@ -106,3 +114,495 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  .menu{
+      background-color: whitesmoke;
+      width: 100%;
+      height: 170px;
+      text-align: center;
+     
+      padding: 0% 20px;
+  }
+
+  .menu p{
+      font-size: 25px;
+  }
+  .menu img{
+      width: 110px;
+      height: 400px;
+      padding: 10px;
+      margin: 30px;
+  }
+
+  .footer{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      background-color: #333435;
+      color:rgb(247, 243, 243); ;
+      width: 100%;
+      height: 300px;
+      padding: 20px;
+     
+      
+      
+  }
+
+  .contact ul li a, .links ul li a{
+    color: rgb(247, 243, 243);
+    font-size: 15px;
+    
+
+  }
+  
+
+  .footer h1{
+      color:rgb(233, 92, 57);
+      font-size: 20px;
+  }
+
+  .footer .copyRight  p{
+      font-size: 20px;
+  }
+
+  .footer .copyRight ul a{
+    font-size: 15px;
+  }
+
+  pre{
+      font-size: 15px;
+      font-family: 'Times New Roman', Times, serif;
+      
+  }
+
+  .links ul{
+      font-size: 20px;
+      margin-left: 50px;
+  }
+
+  .socialMedia ul{
+      display: flex;
+      padding: 0%;
+      margin: 0%;
+
+            
+  }
+
+  .socialMedia ul li{
+      list-style-type: none;
+      margin: 0 5px;
+     
+  }
+
+
+  .socialMedia ul li .fab{
+      display: inline-block;
+      padding-right: 25px;
+      margin:0 10px 0 10px;
+      line-height: 40px;
+      color:white;
+      font-size: 15px;
+      transition:all 0.3s ease-out;
+      text-align: center;
+     
+      
+  }
+
+  .socialMedia ul li a{
+    position: relative;
+      display: block;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color:rgb(233, 92, 57);; 
+      box-shadow: 0 5px 4px rgba(0,0,0,.5); 
+           
+  }
+
+
+  .socialMedia ul li:hover{
+      transform: translate(0,-5px);
+  }
+
+  .socialMedia ul li:nth-child(1) a:hover{
+      background-color: #1877F2;
+  }
+
+  .socialMedia ul li:nth-child(2) a:hover{
+    background-color:#1DA1F2;
+}
+
+.socialMedia ul li:nth-child(3) a:hover{
+    background-color:#E4405F;
+}
+
+.socialMedia ul li:nth-child(4) a:hover{
+    background-color:#0A66C2;
+}
+
+.socialMedia ul li:nth-child(5) a:hover{
+    background-color:#CD201F;
+}
+
+
+.account{
+    width: 400px;
+    height: 590px;
+    padding: 25px;
+    margin: 25px auto;
+    border: 1px solid rgb(233, 92, 57);
+    border-radius: 4px; 
+}
+
+.login{
+    width: 400px;
+    height: 500px;
+    padding: 25px;
+    margin: 25px auto;
+    border: 1px solid rgb(233, 92, 57);
+    border-radius: 4px; 
+}
+
+.account form input,.login form input{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.btn{
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color:rgb(233, 92, 57);
+    color: white;
+    padding: auto;
+    
+}
+.account form a,.login form a{
+    font-size: 20px;
+    color:blue;
+    
+}
+
+.account>h1,.login>h1{
+    text-align: center;
+    color:rgb(233, 92, 57) ;
+}
+
+.right{
+    display: flex;
+    margin: 15px auto;
+    padding: 25px;
+    align-items: flex-end;
+}
+
+.reserve{
+    font-size: 15px;
+    margin-right: 250px;
+    align-items: center;
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto ;
+}
+
+.section .new-arrival{
+    width: 100%;
+    margin-top: 20px;
+}
+.section .new-arrival h1{
+    text-align: center;
+    font-size: 30px;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.section .new-arrival h1::after{
+    content: "";
+    height: 5px;
+    width: 25px;
+    display: block;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgb(0, 0,0, 25%);
+    text-align: center;
+    width: 300px;
+    margin: 25px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.img-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section img{
+    width: 100%;
+    height: 200px;
+}
+
+.description{
+    text-align: center;
+    margin-top: 20px;
+}
+.description h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color:black;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.description p{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+.description span{
+    margin-left: 8px;
+}
+.description del{
+    margin-left: 7px;
+    font-size: 15px;
+    color: brown;
+}
+.button-group{
+    font-size: 30px;
+}
+.button-group .buy{
+    background-color:  #1976d2;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.button-group .buy:hover{
+    background-color:  #0b348d;
+    transition: 0.6s ease;
+}
+.button-group .cart:hover{
+    background-color: #222;
+    transition: 0.6s ease;
+}
+.shop{
+    margin-left: 45px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+    text-decoration-color: #fd8c66;
+    padding-top: 25px;
+}
+
+.button-group .cart{
+    background-color: #f2533a;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.rating{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.rating i{
+color: #db8b21;
+padding: 0px 3px;
+font-size: 18px;
+}
+
+table{
+    width: 100%;
+}
+
+.cart{
+    margin: 25px 50px 25px;
+    overflow-x: auto;
+    
+}
+.cart table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart table thead{
+    font-weight:700;
+    
+}
+
+.cart table thead td{
+    background-color: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+
+} 
+
+.cart .input{
+    width: 25%;
+    padding-left: 1px;
+}
+.cart table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+.cart table td:nth-child(1){
+    width: 100px;
+}
+.cart table td:nth-child(2),
+.cart table td:nth-child(3){
+    width: 200px;
+}
+.cart table td:nth-child(4),
+.cart table td:nth-child(5)
+.cart table td:nth-child(6){
+    width: 170px;
+}
+.cart table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+.cart table tbody i{
+    color: #8d8c89;
+    font-size: 15px;
+}
+.cart-buttom .row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 45px 25px;
+    
+    
+}
+.cart-buttom .row .coupon{
+min-width: 600px;
+min-height: 50px;
+
+}
+.cart-buttom .row .total{
+    min-width: 500px;
+    height: 150px;
+    margin-left: 25px;
+    }
+
+
+
+.cartDetail{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-buttom .coupon,
+.cart-buttom .total{
+    border: 1px solid #b6b3b3;
+}
+.cart-buttom .coupon h5,
+.cart-buttom .total h5{
+    background-color: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700px;
+    
+}
+.cart-buttom .coupon p,
+.cart-buttom .coupon input{
+    padding: 0 12px;
+}
+.cart-buttom .coupon input,
+.cart-buttom .coupon button{
+    height: 40px;
+    margin: 0 0 20px 12px;
+}
+.cart-buttom .total div>div{
+    padding: 0 12px;
+}
+.cart-buttom .total h6{
+    color: #2a2a2a;
+}
+.second-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+.cart-buttom .total button{
+    font-size: 15px;
+    color: white;
+    background-color:#fd8c66;
+    margin: 110px 12px 10px 0;
+    display: flex;
+    font-weight: 600;
+    padding: 10px 25px 25px 25px;
+    justify-content: flex-end;
+    text-align: center;
+    width: 50%;
+    height:40px;
+    cursor: pointer;
+    margin-left: auto;
+
+    
+}
+
+
+.cart-buttom .total .cartDetail{
+    font-size: 25px;
+    margin: 10px 0 15px 15px;
+}
+.cart-buttom .total{
+    min-height: 300px;
+}
+.cart-buttom .total .cartDetail p{
+    font-size: 15px;
+    margin-right: 15px;
+    color: #333435;
+}
+
+.row{
+    border: none;
+}
+.cart-buttom .row .coupon{
+    height:150px;
+}
+.cart-buttom .row .coupon p{
+    padding: 15px ;
+}
+.cart-buttom .row .coupon button{
+    width: 220px;
+    margin-left: 45px;
+    cursor: pointer;
+    font-size: 20px;
+}
